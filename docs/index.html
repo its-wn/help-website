@@ -16,14 +16,15 @@
   <meta name="theme-color" content="#ffffff">
   <link rel="stylesheet" href="/assets/css/globals.css">
 </head>
-<body>
+<body class="flex min-h-screen flex-col">
   <div class="navbar justify-center bg-base-100">
   <a href="/" class="cursor-pointer">
     <img src="/assets/logo/its-logo.svg" alt="ITS GmbH &amp; Co. KG" class="h-10">
   </a>
 </div>
 
-  
+  <div class="flex-1">
+    
 <div class="hero bg-base-200 py-12">
   <div class="hero-content text-center">
     <div class="max-w-xl">
@@ -77,11 +78,6 @@
     
   </div>
 
-  
-  <p class="mt-12 text-center text-xs text-muted">
-    <a href="/downloads/its-fernwartung-fuer-support-arm64.dmg" class="link cursor-pointer">Für Support-Mitarbeiter</a>
-  </p>
-  
 </main>
 
 <script>
@@ -104,5 +100,11 @@
   })()
 </script>
 
+  </div>
+  
+  <footer class="py-6 text-center text-xs text-muted">
+    <a href="/downloads/its-fernwartung-fuer-support-arm64.dmg" class="link cursor-pointer">Für Support-Mitarbeiter</a>
+  </footer>
+  
 </body>
 </html>

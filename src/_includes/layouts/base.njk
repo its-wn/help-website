@@ -16,8 +16,15 @@
   <meta name="theme-color" content="#ffffff">
   <link rel="stylesheet" href="/assets/css/globals.css">
 </head>
-<body>
+<body class="flex min-h-screen flex-col">
   {% include "navbar.njk" %}
-  {{ content | safe }}
+  <div class="flex-1">
+    {{ content | safe }}
+  </div>
+  {% if rustdesk.supporter %}
+  <footer class="py-6 text-center text-xs text-muted">
+    <a href="{{ rustdesk.supporter.url }}" class="link cursor-pointer">{{ rustdesk.supporter.label }}</a>
+  </footer>
+  {% endif %}
 </body>
 </html>
